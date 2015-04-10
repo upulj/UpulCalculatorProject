@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Calculator" id="BYZ-38-t0r" customClass="ViewController" customModule="UpulCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Root View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-vF-ZPu" userLabel="Contect View">
+                                <rect key="frame" x="0.0" y="400" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNJ-Eo-vFP" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="450" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="width" priority="750" id="aEM-Gg-qfH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Je-xl-kNO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hn-FJ-2GM" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="450" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="9hn-FJ-2GM" secondAttribute="width" id="k41-kV-DlP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="k41-kV-DlP"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZH-Pf-IMv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3T-sh-m8a">
+                                        <rect key="frame" x="300" y="450" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="K3T-sh-m8a" secondAttribute="width" id="rrV-nT-wIw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="rrV-nT-wIw"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="equalsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEP-6z-5Ux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EQ-bg-5SO" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="300" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="2EQ-bg-5SO" secondAttribute="width" id="Xyt-iT-S4G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Xyt-iT-S4G"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAl-rM-BHR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CC6-OV-J53" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="300" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="CC6-OV-J53" secondAttribute="width" id="vhE-uY-Pxr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="vhE-uY-Pxr"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuE-dQ-RkS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLM-Xy-Kih" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="300" y="300" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="KLM-Xy-Kih" secondAttribute="width" id="Rjj-5M-N0R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Rjj-5M-N0R"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otH-B5-ZKb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-Rr-wiy" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="450" y="300" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="7ux-Rr-wiy" secondAttribute="width" id="ULc-kJ-3CA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ULc-kJ-3CA"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ3-qt-PHv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDe-Q0-20P" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="450" y="450" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="cDe-Q0-20P" secondAttribute="width" id="e2y-ww-FeP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="e2y-ww-FeP"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWw-Ck-9AI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW3-xC-604" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="BW3-xC-604" secondAttribute="width" id="Wfi-UV-xJe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wfi-UV-xJe"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7d0-9F-vnc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJx-xH-2ga" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="150" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="oJx-xH-2ga" secondAttribute="width" id="Wvq-eh-cmy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wvq-eh-cmy"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3j9-we-Jak"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dym-Pr-IDF" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="300" y="150" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="dym-Pr-IDF" secondAttribute="width" id="MKx-OA-YDg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="MKx-OA-YDg"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSf-Gz-7au"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieD-gH-lwb" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="450" y="150" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="ieD-gH-lwb" secondAttribute="width" id="ux2-LK-7Wd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ux2-LK-7Wd"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8u-jn-hLH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZw-gz-Xh9" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="GZw-gz-Xh9" secondAttribute="width" id="6qK-Rv-euX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6qK-Rv-euX"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5R-Kk-ozr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjx-Zy-ukd" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="300" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="Hjx-Zy-ukd" secondAttribute="width" id="dj7-j9-HgI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="dj7-j9-HgI"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcB-OU-Hk7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2um-9f-hiO" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="450" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="2um-9f-hiO" secondAttribute="width" id="i9P-Nm-SQf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="i9P-Nm-SQf"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bsm-sd-Cfa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbb-Xb-TAP" customClass="CalculatorButons" customModule="UpulCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="wbb-Xb-TAP" secondAttribute="width" id="EQv-7I-yVh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="EQv-7I-yVh"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rw-OL-8pE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="BBV-vF-ZPu" secondAttribute="width" multiplier="1:1" priority="750" id="10X-Mu-m1g"/>
+                                    <constraint firstItem="ieD-gH-lwb" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="2U8-vY-0aB"/>
+                                    <constraint firstItem="oJx-xH-2ga" firstAttribute="leading" secondItem="BW3-xC-604" secondAttribute="trailing" id="2fQ-RM-Fsv"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="oJx-xH-2ga" secondAttribute="width" id="2xl-3I-CAv"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="height" secondItem="BW3-xC-604" secondAttribute="height" id="3wh-XE-PVV"/>
+                                    <constraint firstItem="Hjx-Zy-ukd" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="3z1-g7-vMo"/>
+                                    <constraint firstItem="2um-9f-hiO" firstAttribute="leading" secondItem="Hjx-Zy-ukd" secondAttribute="trailing" id="43u-k5-A7d"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="top" secondItem="CC6-OV-J53" secondAttribute="bottom" id="4Fv-iG-aMk"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="6wE-z3-utd"/>
+                                    <constraint firstItem="oJx-xH-2ga" firstAttribute="top" secondItem="GZw-gz-Xh9" secondAttribute="bottom" id="79z-8c-yNX"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="height" secondItem="K3T-sh-m8a" secondAttribute="height" id="7qM-wP-GxA"/>
+                                    <constraint firstItem="wbb-Xb-TAP" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="ADV-Yr-jlk"/>
+                                    <constraint firstItem="KLM-Xy-Kih" firstAttribute="leading" secondItem="CC6-OV-J53" secondAttribute="trailing" id="AIF-sr-lTf"/>
+                                    <constraint firstItem="Hjx-Zy-ukd" firstAttribute="leading" secondItem="GZw-gz-Xh9" secondAttribute="trailing" id="Asq-nz-K7r"/>
+                                    <constraint firstItem="Hjx-Zy-ukd" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="BF3-gw-8ry"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="top" secondItem="2EQ-bg-5SO" secondAttribute="bottom" id="BHG-am-PIH"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="CC6-OV-J53" secondAttribute="width" id="BS6-WS-JeB"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="height" secondItem="K3T-sh-m8a" secondAttribute="height" id="Cbe-CS-jPA"/>
+                                    <constraint firstItem="KLM-Xy-Kih" firstAttribute="top" secondItem="dym-Pr-IDF" secondAttribute="bottom" id="DjS-pz-GDS"/>
+                                    <constraint firstItem="wbb-Xb-TAP" firstAttribute="leading" secondItem="BBV-vF-ZPu" secondAttribute="leading" id="Dwf-55-Uub"/>
+                                    <constraint firstItem="cDe-Q0-20P" firstAttribute="width" secondItem="K3T-sh-m8a" secondAttribute="width" id="FGe-Qb-onn"/>
+                                    <constraint firstItem="CC6-OV-J53" firstAttribute="top" secondItem="oJx-xH-2ga" secondAttribute="bottom" id="Frg-KH-GV3"/>
+                                    <constraint firstItem="2EQ-bg-5SO" firstAttribute="top" secondItem="BW3-xC-604" secondAttribute="bottom" id="Hfr-7y-EtO"/>
+                                    <constraint firstItem="2EQ-bg-5SO" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" priority="998" id="Icl-FE-Ndo"/>
+                                    <constraint firstItem="cDe-Q0-20P" firstAttribute="top" secondItem="7ux-Rr-wiy" secondAttribute="bottom" id="JTB-qg-lU9"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="width" secondItem="K3T-sh-m8a" secondAttribute="width" id="KdC-aa-LaS"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="height" secondItem="2um-9f-hiO" secondAttribute="height" id="Keh-I8-cRi"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="K3T-sh-m8a" secondAttribute="width" id="Khz-Bc-LQT"/>
+                                    <constraint firstItem="K3T-sh-m8a" firstAttribute="top" secondItem="KLM-Xy-Kih" secondAttribute="bottom" id="KwM-hy-cfk"/>
+                                    <constraint firstItem="dym-Pr-IDF" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="Luk-mB-hPK"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="leading" secondItem="eNJ-Eo-vFP" secondAttribute="trailing" id="NpT-a6-HjH"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="leading" secondItem="BBV-vF-ZPu" secondAttribute="leading" id="OSC-1e-Nl4"/>
+                                    <constraint firstAttribute="bottom" secondItem="cDe-Q0-20P" secondAttribute="bottom" id="UJf-Yk-QFN"/>
+                                    <constraint firstItem="ieD-gH-lwb" firstAttribute="top" secondItem="2um-9f-hiO" secondAttribute="bottom" id="Uj7-6L-NfG"/>
+                                    <constraint firstItem="GZw-gz-Xh9" firstAttribute="leading" secondItem="wbb-Xb-TAP" secondAttribute="trailing" id="UoZ-yq-bYP"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="VXm-3Z-E60"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="BW3-xC-604" secondAttribute="width" id="WOK-nQ-o2v"/>
+                                    <constraint firstItem="K3T-sh-m8a" firstAttribute="leading" secondItem="9hn-FJ-2GM" secondAttribute="trailing" id="XLz-XQ-cYo"/>
+                                    <constraint firstItem="cDe-Q0-20P" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="Xkf-Jo-0RL"/>
+                                    <constraint firstItem="CC6-OV-J53" firstAttribute="leading" secondItem="2EQ-bg-5SO" secondAttribute="trailing" id="Yxo-WP-BRi"/>
+                                    <constraint firstItem="ieD-gH-lwb" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="bc8-tP-HK1"/>
+                                    <constraint firstItem="ieD-gH-lwb" firstAttribute="leading" secondItem="dym-Pr-IDF" secondAttribute="trailing" id="bt4-Qq-Hgz"/>
+                                    <constraint firstItem="dym-Pr-IDF" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="c0s-wP-2sZ"/>
+                                    <constraint firstItem="cDe-Q0-20P" firstAttribute="leading" secondItem="K3T-sh-m8a" secondAttribute="trailing" id="c6I-YZ-Rsx"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="BBV-vF-ZPu" secondAttribute="width" multiplier="0.25" id="ddQ-sx-wqH"/>
+                                    <constraint firstAttribute="bottom" secondItem="9hn-FJ-2GM" secondAttribute="bottom" id="eMo-K7-5ON"/>
+                                    <constraint firstItem="KLM-Xy-Kih" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="fls-PK-dv7"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="height" secondItem="CC6-OV-J53" secondAttribute="height" id="gG6-Ps-0hc"/>
+                                    <constraint firstAttribute="bottom" secondItem="K3T-sh-m8a" secondAttribute="bottom" id="gSq-2P-LaI"/>
+                                    <constraint firstItem="GZw-gz-Xh9" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="h0B-n0-sqJ"/>
+                                    <constraint firstItem="cDe-Q0-20P" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="iYZ-H4-9Ms"/>
+                                    <constraint firstItem="wbb-Xb-TAP" firstAttribute="height" secondItem="eNJ-Eo-vFP" secondAttribute="height" id="kVd-df-cKP"/>
+                                    <constraint firstItem="9hn-FJ-2GM" firstAttribute="height" secondItem="9hn-FJ-2GM" secondAttribute="width" id="m5D-RS-KrH"/>
+                                    <constraint firstItem="2EQ-bg-5SO" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="nUm-3p-HrL"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="height" secondItem="7ux-Rr-wiy" secondAttribute="height" id="oWb-Kw-1vo"/>
+                                    <constraint firstItem="KLM-Xy-Kih" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="owQ-Ip-wAR"/>
+                                    <constraint firstItem="cDe-Q0-20P" firstAttribute="height" secondItem="K3T-sh-m8a" secondAttribute="height" id="r0Y-yS-491"/>
+                                    <constraint firstItem="dym-Pr-IDF" firstAttribute="top" secondItem="Hjx-Zy-ukd" secondAttribute="bottom" id="r2Q-hi-5wU"/>
+                                    <constraint firstItem="2EQ-bg-5SO" firstAttribute="leading" secondItem="BBV-vF-ZPu" secondAttribute="leading" id="sGJ-Vk-9k2"/>
+                                    <constraint firstItem="7ux-Rr-wiy" firstAttribute="leading" secondItem="KLM-Xy-Kih" secondAttribute="trailing" id="tAK-qr-TSb"/>
+                                    <constraint firstItem="BW3-xC-604" firstAttribute="leading" secondItem="BBV-vF-ZPu" secondAttribute="leading" id="tVi-Sr-TbX"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="7ux-Rr-wiy" secondAttribute="width" id="uzJ-fP-wi6"/>
+                                    <constraint firstItem="BW3-xC-604" firstAttribute="top" secondItem="wbb-Xb-TAP" secondAttribute="bottom" id="vHu-US-Rt8"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="width" secondItem="2um-9f-hiO" secondAttribute="width" id="vny-a9-6Nn"/>
+                                    <constraint firstItem="7ux-Rr-wiy" firstAttribute="top" secondItem="ieD-gH-lwb" secondAttribute="bottom" id="wYC-eg-DAa"/>
+                                    <constraint firstItem="eNJ-Eo-vFP" firstAttribute="height" secondItem="oJx-xH-2ga" secondAttribute="height" id="wf1-KT-Uhh"/>
+                                    <constraint firstItem="dym-Pr-IDF" firstAttribute="leading" secondItem="oJx-xH-2ga" secondAttribute="trailing" id="wmg-ZJ-h7j"/>
+                                    <constraint firstItem="GZw-gz-Xh9" firstAttribute="width" secondItem="eNJ-Eo-vFP" secondAttribute="width" id="xmx-FC-WsP"/>
+                                    <constraint firstAttribute="bottom" secondItem="eNJ-Eo-vFP" secondAttribute="bottom" id="z1u-of-qW6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="m5D-RS-KrH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to clear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKA-wi-Wz1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DJR-Px-vvG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uOb-29-wzm" appends="YES" id="mWT-Xf-fK1"/>
+                                    <outletCollection property="gestureRecognizers" destination="bB8-Tq-KdO" appends="YES" id="pRy-ur-QhB"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFw-Gi-Sqs">
+                                <rect key="frame" x="0.0" y="50" width="600" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NHp-68-IjR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nKA-wi-Wz1" firstAttribute="leading" secondItem="BBV-vF-ZPu" secondAttribute="leading" id="38N-BB-SiB"/>
+                            <constraint firstItem="wbb-Xb-TAP" firstAttribute="top" secondItem="oFw-Gi-Sqs" secondAttribute="bottom" id="5nb-py-ksh"/>
+                            <constraint firstItem="oFw-Gi-Sqs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8xz-Sb-NfA"/>
+                            <constraint firstItem="nKA-wi-Wz1" firstAttribute="trailing" secondItem="BBV-vF-ZPu" secondAttribute="trailing" id="GEQ-5A-2r9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BBV-vF-ZPu" secondAttribute="bottom" id="OY6-kS-FLA"/>
+                            <constraint firstItem="BBV-vF-ZPu" firstAttribute="top" secondItem="oFw-Gi-Sqs" secondAttribute="bottom" id="PIG-iE-K8p"/>
+                            <constraint firstItem="nKA-wi-Wz1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U9g-yp-bSI"/>
+                            <constraint firstItem="nKA-wi-Wz1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wge-hS-V92"/>
+                            <constraint firstAttribute="trailing" secondItem="oFw-Gi-Sqs" secondAttribute="trailing" id="YUT-GG-SfB"/>
+                            <constraint firstItem="BBV-vF-ZPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ghn-S7-ORs"/>
+                            <constraint firstItem="oFw-Gi-Sqs" firstAttribute="top" secondItem="nKA-wi-Wz1" secondAttribute="bottom" id="hGV-bV-smD"/>
+                            <constraint firstAttribute="trailing" secondItem="BBV-vF-ZPu" secondAttribute="trailing" id="nBH-KH-2FV"/>
+                            <constraint firstAttribute="width" secondItem="BBV-vF-ZPu" secondAttribute="width" id="sGP-OU-gDD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="U9g-yp-bSI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="oFw-Gi-Sqs" id="aS6-ta-0xj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="uOb-29-wzm">
+                    <connections>
+                        <action selector="clear:" destination="BYZ-38-t0r" id="6LS-Yh-eef"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="bB8-Tq-KdO">
+                    <connections>
+                        <action selector="clear:" destination="BYZ-38-t0r" id="Kq5-ij-Yuw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="298" y="394"/>
+        </scene>
+    </scenes>
+</document>
